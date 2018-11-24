@@ -8,6 +8,7 @@
  
  
  # 部分截图
- [](https://github.com/libinWeny/RNLibin/blob/master/appScreen/1.png)
- [](https://github.com/libinWeny/RNLibin/blob/master/appScreen/2.png)
- [](https://github.com/libinWeny/RNLibin/blob/master/appScreen/3.png)
+ ![图片](https://github.com/libinWeny/RNLibin/blob/master/appScreen/1.png)
+ ![图片](https://github.com/libinWeny/RNLibin/blob/master/appScreen/2.png)
+ ![图片](https://github.com/libinWeny/RNLibin/blob/master/appScreen/3.png)
+ 
