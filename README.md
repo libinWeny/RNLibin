@@ -8,7 +8,6 @@
  
  
  # 部分截图
- ![图片](https://github.com/libinWeny/RNLibin/blob/master/appScreen/1.png)
- ![图片](https://github.com/libinWeny/RNLibin/blob/master/appScreen/2.png)
+ ![图片](https://upload-images.jianshu.io/upload_images/4770957-81812dbf205dfdd1.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/373)
  ![图片](https://github.com/libinWeny/RNLibin/blob/master/appScreen/3.png)
  
