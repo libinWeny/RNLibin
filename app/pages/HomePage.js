@@ -15,10 +15,9 @@ import Icon from "react-native-vector-icons/FontAwesome";
 const config = [
     { leftText : '统计图表' },
     { leftText : '滑动出现头部' },
-    { leftText : '意见反馈' },
-    { leftText : '账号安全' },
-    { leftText : '密码修改' },
-    { leftText : '检查更新', rightText : '1.4.4' },
+    { leftText : '录音 播放' },
+    { leftText : '调用外部导航', rightText : '调用手机百度，没有则调用H5 ' },
+    { leftText : '图片放大查看' },
 ];
 export default class HomePage extends Component {
 
@@ -36,22 +35,14 @@ export default class HomePage extends Component {
             case '滑动出现头部':
                 navigate('ColorHeader');
                 break;
-            case '意见反馈':
-                navigate('MyIdea');
+            case '录音 播放':
+                navigate('Audio');
                 break;
-            case '帮助指南':
-                navigate('HelpPage');
+            case '调用外部导航':
+                navigate('MapNavigate');
                 break;
-            case '检查更新':
-                Alert.alert(
-                    '',
-                    '您的认证还没有完成呢',
-                    [
-                        { text : '取消', onPress : () => console.log('取消') },
-                        { text : '前往', onPress : () => navigate('CertificationSelect') },
-                    ],
-                    { cancelable : false }
-                )
+            case  '图片放大查看':
+                navigate('ImageBigLook');
                 break;
         }
 
@@ -60,14 +51,11 @@ export default class HomePage extends Component {
     render() {
         return (
             <ScrollView style={styles.container}>
-                <View style={styles.headerView} onPress={() => this.cellPress(item)}>
-                    <Text>各种功能组件的使用</Text>
-                </View>
                 {
                     config.map(item =>
                         <TouchableOpacity style={styles.cell} key={item.leftText} onPress={() => this.cellPress(item)}>
                             <Text style={styles.text}> {item.leftText}</Text>
-                            <Text style={styles.version}> {item.rightText}</Text>
+                            <Text style={styles.right}> {item.rightText}</Text>
                             <Icon name='angle-right' color={CS.ICON}/>
                         </TouchableOpacity>
                     )
@@ -82,8 +70,8 @@ const styles = StyleSheet.create({
     container : {
         flex : 1,
     },
-    headerView:{
-        height:60,
+    headerView : {
+        height : 60,
         alignItems : 'center',
         justifyContent : 'center',
 
@@ -98,6 +86,10 @@ const styles = StyleSheet.create({
         alignItems : 'center',
         paddingHorizontal : 15,
 
+    },
+    right : {
+        fontSize : 12,
+        color : '#888888',
     },
     img : {
         width : 22,

@@ -11,6 +11,11 @@ import Line from "./pages/echarts/Line";
 import Change from "./pages/echarts/Change";
 import ColorHeader from "./pages/ColorHeader";
 import Setting from "./pages/Setting";
+import MapNavigate from "./pages/MapNavigate";
+import Audio from "./pages/Audio";
+import AudioPlay from "./pages/AudioPlay";
+import AudioList from "./pages/AudioList";
+import ImageBigLook from "./pages/ImageBigLook";
 
 const AppStack = createStackNavigator({
     Tab : Tab,
@@ -23,6 +28,12 @@ const AppStack = createStackNavigator({
     Change : Change,
 
     ColorHeader : ColorHeader,
+    MapNavigate : MapNavigate,
+    Audio : Audio,
+    AudioList : AudioList,
+    AudioPlay : AudioPlay,
+    ImageBigLook : ImageBigLook,
+
     Setting : Setting,
 },{
     navigationOptions:{

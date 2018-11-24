@@ -81,9 +81,18 @@ const Tab = createBottomTabNavigator({
 });
 
 Tab.navigationOptions = ({ navigation }) => {
-    return {
-        header : null,
-    };
+    let { routeName } = navigation.state.routes[navigation.state.index];
+
+    if(routeName==='HomePage'){
+        return {
+            headerTitle: '一些常用功能的实现',
+        }
+    }else {
+        return {
+            header : null,
+        };
+    }
+
 };
 
 export default Tab;
