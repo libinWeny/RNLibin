@@ -4,14 +4,21 @@ import Tab from "./Tab";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import AddPage from "./pages/AddPage";
-import EchartsPage from "./pages/home/EchartsPage";
-import EchartsPage2 from "./pages/home/EchartsPage2";
+import Echarts from "./pages/echarts/index";
+import Pie from "./pages/echarts/Pie";
+import Bar from "./pages/echarts/Bar";
+import Line from "./pages/echarts/Line";
+import Change from "./pages/echarts/Change";
 
 const AppStack = createStackNavigator({
     Tab : Tab,
     AddPage : AddPage,
-    EchartsPage : EchartsPage,
-    EchartsPage2 : EchartsPage2,
+
+    Echarts : Echarts,
+    Pie : Pie,
+    Bar : Bar,
+    Line : Line,
+    Change : Change,
 },{
     navigationOptions:{
         headerTintColor : CS.MAIN,

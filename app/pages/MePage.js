@@ -83,7 +83,7 @@ export default class ScreenMe extends Component {
                     colors={[ '#FFD4FB', '#FF14FD' ]}
                 >
                     <View style={styles.header}>
-                        <Image style={styles.photo} source={require('../../image/user.jpeg')}/>
+                        <Image style={styles.photo} source={require('../image/user.jpeg')}/>
 
                         <View style={styles.msgView}>
                             <Text style={styles.name}>{data.name}</Text>

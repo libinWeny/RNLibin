@@ -13,8 +13,7 @@ import {
 import Icon from "react-native-vector-icons/FontAwesome";
 
 const config = [
-    { leftText : '统计图表-饼状图' },
-    { leftText : '统计图表-折线图' },
+    { leftText : '统计图表' },
     { leftText : '帮助指南' },
     { leftText : '意见反馈' },
     { leftText : '账号安全' },
@@ -23,21 +22,16 @@ const config = [
 ];
 export default class HomePage extends Component {
 
-
     //  getAllWithoutPhotos     getAll
-    componentDidMount(){
+    componentDidMount() {
 
     }
-
 
     cellPress = (item) => {
         const { navigate } = this.props.navigation;
         switch (item.leftText) {
-            case '统计图表-饼状图':
-                navigate('EchartsPage');
-                break;
-            case '统计图表-折线图':
-                navigate('EchartsPage2');
+            case '统计图表':
+                navigate('Echarts');
                 break;
             case '我的"订制转发"户型':
                 navigate('MyBuilding');
@@ -63,7 +57,6 @@ export default class HomePage extends Component {
 
     };
 
-
     render() {
         return (
             <ScrollView style={styles.container}>
@@ -80,14 +73,11 @@ export default class HomePage extends Component {
         );
     }
 
-
-
 }
 
-
 const styles = StyleSheet.create({
-    container:{
-        flex:1,
+    container : {
+        flex : 1,
     },
     cell : {
         backgroundColor : 'white',
@@ -106,7 +96,7 @@ const styles = StyleSheet.create({
     },
     text : {
         fontSize : 16,
-        color :'#333333',
+        color : '#333333',
         textAlign : 'left',
         flex : 1,
 

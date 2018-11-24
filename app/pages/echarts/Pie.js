@@ -13,7 +13,7 @@ import Echarts from 'native-echarts';
 
 import Icon from "react-native-vector-icons/FontAwesome";
 
-export default class EchartsPage extends Component {
+export default class Pie extends Component {
 
     static navigationOptions = ({
         headerTitle : '饼状图统计',

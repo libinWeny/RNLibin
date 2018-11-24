@@ -8,8 +8,8 @@ import {
     Image,
     Platform
 } from 'react-native';
-import HomePage from './pages/home/HomePage'
-import MePage from './pages/me/MePage'
+import HomePage from './pages/HomePage'
+import MePage from './pages/MePage'
 import { createBottomTabNavigator } from 'react-navigation';
 import TabBarItem from "./TabBarItem";
 import AddNullPage from "./pages/AddNullPage";
