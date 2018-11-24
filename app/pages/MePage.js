@@ -99,7 +99,7 @@ export default class ScreenMe extends Component {
                 <View style={styles.vipView}>
                     <View style={styles.vipViewCell}>
                         <Text style={[styles.text,{flex:1}]}>我的账户</Text>
-                        <Text style={styles.text} onPress={() => navigate('MyPayLog')}>充值记录  <Icon name='angle-right' color={CS.ICON}/></Text>
+                        <Text onPress={() => navigate('MyPayLog')}>充值记录  <Icon name='angle-right' color={CS.ICON}/></Text>
                     </View>
 
                     <View style={styles.vipViewCell2}>

@@ -14,7 +14,7 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 const config = [
     { leftText : '统计图表' },
-    { leftText : '帮助指南' },
+    { leftText : '滑动出现头部' },
     { leftText : '意见反馈' },
     { leftText : '账号安全' },
     { leftText : '密码修改' },
@@ -33,8 +33,8 @@ export default class HomePage extends Component {
             case '统计图表':
                 navigate('Echarts');
                 break;
-            case '我的"订制转发"户型':
-                navigate('MyBuilding');
+            case '滑动出现头部':
+                navigate('ColorHeader');
                 break;
             case '意见反馈':
                 navigate('MyIdea');
@@ -60,6 +60,9 @@ export default class HomePage extends Component {
     render() {
         return (
             <ScrollView style={styles.container}>
+                <View style={styles.headerView} onPress={() => this.cellPress(item)}>
+                    <Text>各种功能组件的使用</Text>
+                </View>
                 {
                     config.map(item =>
                         <TouchableOpacity style={styles.cell} key={item.leftText} onPress={() => this.cellPress(item)}>
@@ -78,6 +81,12 @@ export default class HomePage extends Component {
 const styles = StyleSheet.create({
     container : {
         flex : 1,
+    },
+    headerView:{
+        height:60,
+        alignItems : 'center',
+        justifyContent : 'center',
+
     },
     cell : {
         backgroundColor : 'white',
@@ -99,7 +108,6 @@ const styles = StyleSheet.create({
         color : '#333333',
         textAlign : 'left',
         flex : 1,
-
     },
     cellImgBack : {
         width : 6,

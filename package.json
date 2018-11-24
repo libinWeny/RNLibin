@@ -7,9 +7,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "antd-mobile-rn": "^2.3.1",
     "native-echarts": "^0.4.0",
     "react": "16.6.1",
     "react-native": "0.57.5",
+    "react-native-image-crop-picker": "^0.21.3",
     "react-native-linear-gradient": "^2.4.4",
     "react-native-storage": "^0.2.3",
     "react-native-vector-icons": "^6.1.0",

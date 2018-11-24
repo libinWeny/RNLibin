@@ -9,6 +9,8 @@ import Pie from "./pages/echarts/Pie";
 import Bar from "./pages/echarts/Bar";
 import Line from "./pages/echarts/Line";
 import Change from "./pages/echarts/Change";
+import ColorHeader from "./pages/ColorHeader";
+import Setting from "./pages/Setting";
 
 const AppStack = createStackNavigator({
     Tab : Tab,
@@ -19,6 +21,9 @@ const AppStack = createStackNavigator({
     Bar : Bar,
     Line : Line,
     Change : Change,
+
+    ColorHeader : ColorHeader,
+    Setting : Setting,
 },{
     navigationOptions:{
         headerTintColor : CS.MAIN,
