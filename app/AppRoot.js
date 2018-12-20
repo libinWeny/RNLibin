@@ -16,6 +16,8 @@ import Audio from "./pages/Audio";
 import AudioPlay from "./pages/AudioPlay";
 import AudioList from "./pages/AudioList";
 import ImageBigLook from "./pages/ImageBigLook";
+import TabPage from "./pages/TabPage";
+import TabPage2 from "./pages/TabPage2";
 
 const AppStack = createStackNavigator({
     Tab : Tab,
@@ -33,6 +35,8 @@ const AppStack = createStackNavigator({
     AudioList : AudioList,
     AudioPlay : AudioPlay,
     ImageBigLook : ImageBigLook,
+    TabPage : TabPage,
+    TabPage2 : TabPage2,
 
     Setting : Setting,
 },{

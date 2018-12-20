@@ -59,10 +59,10 @@ export default class ScreenMe extends Component {
             case '检查更新':
                 Alert.alert(
                     '',
-                    '您的认证还没有完成呢',
+                    '暂无最新版本',
                     [
-                        { text : '取消', onPress : () => console.log('取消') },
-                        { text : '前往', onPress : () => navigate('CertificationSelect') },
+                        // { text : '取消', onPress : () => console.log('取消') },
+                        { text : '确定', onPress : () => navigate('CertificationSelect') },
                     ],
                     { cancelable : false }
                 )

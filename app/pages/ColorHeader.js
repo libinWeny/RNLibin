@@ -19,6 +19,7 @@ export default class ColorHeader extends Component {
     componentWillUnmount() {
     }
 
+
     _onScroll(event) {
         let y = event.nativeEvent.contentOffset.y;
         let opacityPercent = y / 200;
@@ -43,6 +44,7 @@ export default class ColorHeader extends Component {
             <View style={styles.container}>
                 <ScrollView
                     style={styles.container}
+                    scrollEventThrottle={16}
                     onScroll={(event) => this._onScroll(event)}
                 >
                     {

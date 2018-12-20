@@ -18,6 +18,8 @@ const config = [
     { leftText : '录音 播放' },
     { leftText : '调用外部导航', rightText : '调用手机百度，没有则调用H5 ' },
     { leftText : '图片放大查看' },
+    { leftText : 'tabPage  Segmented' },
+    { leftText : 'TabPage2' },
 ];
 export default class HomePage extends Component {
 
@@ -44,6 +46,14 @@ export default class HomePage extends Component {
             case  '图片放大查看':
                 navigate('ImageBigLook');
                 break;
+            case  'tabPage  Segmented':
+                navigate('TabPage');
+                break;
+            case  'TabPage2':
+                navigate('TabPage2');
+                break;
+
+
         }
 
     };
